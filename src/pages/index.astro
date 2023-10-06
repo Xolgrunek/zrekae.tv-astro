@@ -1,5 +1,7 @@
 ---
-
+import Twitch from '../components/Twitch.astro'
+import Nav from '../components/Nav.astro'
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -10,7 +12,17 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
+	<body class="dark:bg-slate-800 dark:text-white">
+
+		<Nav>
+
+		</Nav>
+		  
+			<a class="dark:text-white" href="/">Home</a>
+        	<a class="dark:text-white" href="/about/">About</a>
+			<a class="dark:text-white" href="/blog/">Blog</a>
 		<h1>Zrekae.tv</h1>
+		<Twitch></Twitch>
+		<Footer></Footer>
 	</body>
 </html>
